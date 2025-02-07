@@ -3,18 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
+    <title>Northwest Legal Partners | British Columbia Law Firm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Website</h1>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <div class="hero-text">
+            <h1>Northwest Legal Partners</h1>
+            <p>Excellence in Legal Services Across British Columbia</p>
+            <a href="#contact" class="cta-button">Free Consultation</a>
+        </div>
     </header>
-    <main>
-        <p>This is my first website hosted on Netlify!</p>
-    </main>
-    <footer>
-        <p>Created with ❤️</p>
-    </footer>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-landmark"></i>
+                <h3>Corporate Law</h3>
+                <p>Comprehensive legal solutions for businesses of all sizes.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-home"></i>
+                <h3>Real Estate Law</h3>
+                <p>Expert guidance in property transactions and disputes.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-balance-scale"></i>
+                <h3>Civil Litigation</h3>
+                <p>Skilled representation in complex legal disputes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <div>
+                <i class="fas fa-phone"></i>
+                <p>1-800-555-0123</p>
+            </div>
+            <div>
+                <i class="fas fa-envelope"></i>
+                <p>info@northwestlegal.ca</p>
+            </div>
+            <div>
+                <i class="fas fa-map-marker-alt"></i>
+                <p>123 Main Street<br>Vancouver, BC V6B 1A1</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
